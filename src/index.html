@@ -8,16 +8,35 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <load ="partials/header.html" />
 
-    <section>
-      <h1>Example page title</h1>
-      <!-- Path to images as from index.html file -->
-      <img src="./img/javascript.svg" alt="" />
+    <section class="work">
+      <div class="container">
+        
+        <h2 class="work-title">
+          <img class="form-logo" src="./img/avatar.png" alt="jeferson photo" />
+          Let’s <span class="work-title-orange">work</span> together
+        </h2>
+
+        <form class="work-form">
+          <input type="email" class="work-form-input" placeholder="clients@gmail.com" required pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})">
+          <input type="text" class="work-form-input" placeholder="comments" required>
+          <button class="work-send-btn" type="submit">Send</button>
+        </form>
+        
+        <address class="work-contacts">
+          <a class="contact-link" href="mailto:lloydjefferson@gmail.com">lloydjefferson@gmail.com</a>
+          <a class="contact-link" href="tel:+3801111111111">+380 11 1111 11 11</a>
+        </address>
+      </div>
     </section>
-
-    <!-- Loads the specified .html file -->
-    <load ="partials/vite-promo.html" />
+    <div class="backdrop is-hidden">
+      <div class="modal">
+        <button class="modal-close">+</button>
+        <h3 class="modal-title">Thank you for your interest in cooperation!</h3>
+        <p class="modal-text">The manager will contact you shortly to discuss further details and opportunities for cooperation. Please stay in touch.</p>
+      </div>
+    </div>
+    
 
     <script type="module" src="./main.js"></script>
   </body>
